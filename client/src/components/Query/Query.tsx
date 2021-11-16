@@ -1,7 +1,7 @@
 import React from "react";
 import useStyles from "./Query.style";
 import { TextField, Button  } from "@mui/material";
-import { LABELS } from "../../constatnts";
+import { LABELS } from "../../constants";
 import { QueryProps } from "../../types";
 
 const Query = (props: QueryProps) => {

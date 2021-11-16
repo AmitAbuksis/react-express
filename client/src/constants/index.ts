@@ -5,3 +5,5 @@ export const LABELS = {
 
 export const API_RESULT_LIST_TITLE = "Api Results list";
 export const SAVED_QUERIES = "Saved Queries";
+
+export const PAGE_COUNT = 10;

@@ -20,5 +20,21 @@ export interface ResultListProps {
 };
 
 export interface SideBarState {
-    sideBarList: ResultPayload[]
-}
+    list: ResultPayload[],
+    counter: number,
+};
+
+export interface PagingProps {
+    count: number,
+    currentPage: number,
+    handlePageChange: (pageNumber: number) => void,
+};
+
+export interface PaginationActions {
+    type: string,
+    payload: number,
+};
+
+export interface PaginationState {
+    currentPage: number,
+};
