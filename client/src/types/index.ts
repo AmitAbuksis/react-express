@@ -21,7 +21,6 @@ export interface ResultListProps {
 
 export interface SideBarState {
     list: ResultPayload[],
-    counter: number,
 };
 
 export interface PagingProps {

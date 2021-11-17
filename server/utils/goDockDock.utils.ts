@@ -1,0 +1,1 @@
+export const getGoDockDockUrl = (query: string) => `http://api.duckduckgo.com/?${query}=x&format=json`;

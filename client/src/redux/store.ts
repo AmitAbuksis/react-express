@@ -7,6 +7,6 @@ const initialState = {};
 
 const store = createStore(rootReducer, initialState, composeWithDevTools(applyMiddleware(thunk)));
 
-export type RootState = ReturnType<typeof store.getState>
+export type RootState = ReturnType<typeof store.getState>;
 
 export default store;

@@ -1,15 +1,16 @@
-import { ADD_LINK } from "../actions";
+import { ADD_LINK, UPDATE_SIDE_BAR_LIST } from "../actions";
 import { ResultAction, SideBarState } from "../../types";
 
 const initialState = {
     list: [],
-    counter: 0,
 } as SideBarState;
 
 const sideBarReducer = (state = initialState, action: ResultAction) => {
     switch(action.type) {
+        // case UPDATE_SIDE_BAR_LIST:
+        //     return {...state, list: action.payload};
         case ADD_LINK:
-            return {...state, list: [...state.list, action.payload], counter: state.list.length+1};
+            return {...state, list: [...state.list, action.payload]};
         default:
             return state;
     }
