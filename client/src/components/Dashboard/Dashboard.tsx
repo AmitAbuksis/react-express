@@ -38,7 +38,7 @@ const Dashboard = () => {
 
     useEffect(() => {
         dispatch(getInitialData());
-    }, [])
+    }, [dispatch])
 
 
     const indexOfLastResult = currentPage * PAGE_COUNT;

@@ -16,7 +16,7 @@ export const paginate = (pageNumber: number): ThunkAction<void, RootState, unkno
 export const getInitialData = (): ThunkAction<void, RootState, unknown, AnyAction> => async (dispatch) => {
     try {
         const initialData = await GoDockService.getInitialData() as ResultPayload[];
-        if(initialData.length) {
+        if(initialData && initialData.length) {
             dispatch(updateSideBarList(initialData));
         }
     } catch(err) {
@@ -27,7 +27,7 @@ export const getInitialData = (): ThunkAction<void, RootState, unknown, AnyActio
 
 export const savedItemClick = (item: ResultPayload): ThunkAction<void, RootState, unknown, AnyAction> => async (dispatch) => {
     try {
-        const savedItemResult = await GoDockService.saveItem(item) as ResultPayload[];
+        await GoDockService.saveItem(item) as ResultPayload[];
     } catch(err) {
         throw err;
     }

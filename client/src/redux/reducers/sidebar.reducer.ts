@@ -1,4 +1,4 @@
-import { ADD_LINK, UPDATE_SIDE_BAR_LIST } from "../actions";
+import { ADD_LINK } from "../actions";
 import { ResultAction, SideBarState } from "../../types";
 
 const initialState = {
